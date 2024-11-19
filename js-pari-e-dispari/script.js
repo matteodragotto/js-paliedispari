@@ -1,25 +1,29 @@
 const userEvenOdd = prompt('Inserisci Pari o Dispari')
 const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'))
-let cpuEvenOdd;
-let cpuNumber;
+const cpuNumber = randomNumber();
+let message;
 
-const sumNumber = userNumber + randomNumber(cpuNumber)
+const sumNumber = userNumber + cpuNumber
 
-console.log(userEvenOdd, userNumber, randomNumber(cpuNumber,), sumNumber, evenOrOdd(sumNumber));
+console.log(userEvenOdd, userNumber, cpuNumber, sumNumber, evenOrOdd(sumNumber));
 
+if (evenOrOdd(sumNumber) === userEvenOdd){
+  message = alert('Hai vinto!')
+} else {
+  message = alert('Hai perso!')
+}
 
-
-function randomNumber(number){
+function randomNumber(){
   return Math.ceil(Math.random() * 5)
 }
 
-function evenOrOdd(sum){
-  let message;
+function evenOrOdd(sum) {
+  let result;
 
   if (sum % 2 === 0){
-    message = 'Il numero è pari'
+    result = 'pari'
   } else {
-    message = 'Il numero è dispari'
+    result = 'dispari'
   }
-  return message
+  return result
 }
