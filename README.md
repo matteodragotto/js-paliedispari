@@ -26,7 +26,7 @@ Palindroma:
 2. Creo la funzione che analizza la parola del propmt e verifica se è uguale al suo inverso tramite ad esempio il metodo "reverse" e riporta il risultato in console
 
 Pari e Dispari:
-1. Creo 2 prompt per i valore che l'utente deve inserire
+1. Creo 2 prompt per i valori che l'utente deve inserire
 2. Creo una funzione contenente un math random per generare i numeri del computer
 3. Creo una Const come somma dei numeri
 4. Scrivo un If con all'interno un modulo che darà valora pari o dispari alla somma e di conseguenza dichiaro chi ha vinto sulla base del prompt dato dall'utente
