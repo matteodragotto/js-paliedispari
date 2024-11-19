@@ -5,8 +5,6 @@ let message;
 
 const sumNumber = userNumber + cpuNumber
 
-console.log(userEvenOdd, userNumber, cpuNumber, sumNumber, evenOrOdd(sumNumber));
-
 if (evenOrOdd(sumNumber) === userEvenOdd){
   message = alert('Hai vinto!')
 } else {
@@ -27,3 +25,9 @@ function evenOrOdd(sum) {
   }
   return result
 }
+
+console.log('Per te la somma sarà:', userEvenOdd);
+console.log('Il tuo numero è:', userNumber);
+console.log('Il numero della CPU è:', cpuNumber);
+console.log('La somma dei numeri è:', sumNumber);
+console.log('La somma è:', evenOrOdd(sumNumber));
